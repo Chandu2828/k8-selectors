@@ -16,14 +16,14 @@ spec:
       preferredDuringSchedulingIgnoredDuringExecution:
       - weight: 100
         preference:
-          matchExpression: 
+          matchExpressions: 
           - key: topology.kubernetes.io/zone 
             operator: NotIn 
             values:
             - us-east-1c
       - weight: 10 
         preference: 
-          matchExpression:
+          matchExpressions:
           - key: topology.kuberentes.io/zone 
             operator: In 
             values: 

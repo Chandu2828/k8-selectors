@@ -30,5 +30,4 @@ spec:
         topologykey: "kubernetes.io/hostname" # border is host 
   containers:
   - name: nginx 
-    image: nginx 
-    
+    image: nginx

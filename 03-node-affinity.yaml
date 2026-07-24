@@ -3,6 +3,9 @@ kind: Pod
 metadata:
   name: with-node-affinity
 spec:
+  containes: 
+  - name: nginx 
+    image: nginx 
   affinity:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:

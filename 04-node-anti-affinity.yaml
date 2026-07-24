@@ -7,7 +7,7 @@ spec:
     nodeAffinity: 
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
-        - matchExpressions:
+        - matchExpressions: 
           - key: topology.kubernetes.io/zone 
             operator: In 
             values:

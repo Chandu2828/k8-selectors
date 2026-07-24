@@ -16,19 +16,21 @@ spec:
             values:
             - us-east-1f
             - us-east-1c
+      # here it will take the condition from the above and then consider according to below weights
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 100
+      - weight: 100 # has higher importance 
         preference:
           matchExpressions:
           - key: topology.kubernetes.io/zone 
             operator: In 
             values:
             - us-east-1f
-      - weight: 10 
+      - weight: 10 # has lower importance 
         preference:
           matchExpressions:
           - key: topology.kubernetes.io/zone 
             operator: In 
             values:
-            - us-east-1c 
+            - us-east-1c
+
   

@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: with-node-affinity
 spec:
-  containes: 
+  containers: 
   - name: nginx 
     image: nginx 
   affinity:

@@ -28,6 +28,7 @@ spec:
             values:
             - database 
         topologyKey: "kubernetes.io/hostname" # border is host 
+      # The pod can land in any host other than where the pod-3 is running
   containers:
   - name: nginx 
     image: nginx

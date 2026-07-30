@@ -28,7 +28,7 @@ spec:
             values:
             - database 
         topologyKey: topology.kubernetes.io/zone # border is AZ
-        #topologyKey: topology.kubernetes.io/hostname # to land on the same node
+        #topologyKey: topology.kubernetes.io/hostname # to land on the same node in same AZ
   containers:
   - name: nginx 
     image: nginx 
